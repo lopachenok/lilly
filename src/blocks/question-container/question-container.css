@@ -1,0 +1,21 @@
+.question-container {
+  border-top: 1px solid rgba(238, 238, 238, 0.85);
+  padding-top: 23px;
+  padding-bottom: 20px;
+  position: relative;
+  
+  &__text {
+    margin-top: 13px;
+  }
+  
+  &__progressbar {
+    left: -40px;
+    
+    &:before {
+      height: 36px;
+      top: -36px;
+    }
+    
+  }
+  
+}

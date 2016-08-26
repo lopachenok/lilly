@@ -1,0 +1,20 @@
+.page-main {
+  background-color: rgba(238, 238, 238, 0.85);
+  min-height: calc(100vh - 167px);
+  
+  &__inner {
+    @mixin container;
+    background: #fff;
+    min-height: calc(100vh - 167px);
+    padding-top: 12px;
+  }
+  
+  &__link-list {
+    margin-top: 30px;
+  }
+  
+  &__text {
+    margin-top: 20px;
+  }
+  
+}

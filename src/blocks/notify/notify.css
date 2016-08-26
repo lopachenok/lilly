@@ -1,0 +1,24 @@
+.notify {
+  background-color: rgba(232, 186, 31, 0.2);
+  border-radius: 6px;
+  border: 1px solid #e8ba1f;
+  display: inline-block;
+  color: #917413;
+  font: 400 13px / 28px $lato;
+  height: 28px;
+  padding-left: 33px;
+  padding-right: 10px;
+  position: relative;
+  
+  &:after {
+    position: absolute;
+    content: '';
+    height: 16px;
+    width: 18px;
+    background: url(notify-icon.png);
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+}

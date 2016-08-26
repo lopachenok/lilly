@@ -1,0 +1,86 @@
+.btn {
+  display: block;
+  height: 24px;
+  width: 55px;
+  border-radius: 6px;
+  border: 1px solid #e7e7e7;
+  color: #464646;
+  font: 400 14px / 18px $lato;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 0;
+  outline: none;
+  
+  &__icon {
+    display: block;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 1px solid #e7e7e7;
+    margin: 0 6px;
+    position: relative;
+    
+    &:before {
+      position: absolute;
+      content: '';
+      height: 8px;
+      width: 8px;
+      border-radius: 50%;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+    
+  }  
+  
+}
+
+.btn--yes {
+  border-color: #61ba0e;
+  
+  .btn__icon {
+    border-color: #61ba0e;
+    
+    &:before {
+      background-color: #61ba0e;
+    }
+    
+  }
+  
+}
+
+.btn--no {
+  border-color: #e2231a;
+  
+  .btn__icon {
+    border-color: #e2231a;
+    
+    &:before {
+      background-color: #e2231a;
+    }
+    
+  }
+  
+}
+
+.btn--large {
+  background-color: #0099da;
+  border-radius: 6px;
+  height: 40px;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: #ffffff;
+  font: 700 16px / 40px $lato;
+  width: auto;
+  display: inline-block;
+}
+
+.btn--large-yes {
+  background-color: #61ba0e;
+}
+
+.btn--large-no {
+  background-color: #e2231a;
+}
