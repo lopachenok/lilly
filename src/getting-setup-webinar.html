@@ -20,13 +20,13 @@
       <nav class="main-menu  page-header__menu">
         <ul class="main-menu__list">
           <li class="main-menu__item">
-            <a href="" class="main-menu__link">Why Virtual?</a>
-          </li>
-          <li class="main-menu__item">
-            <a href="" class="main-menu__link">Getting Setup</a>
+            <a href="index.html" class="main-menu__link">Why Virtual?</a>
           </li>
           <li class="main-menu__item  main-menu__item--active">
-            <a href="" class="main-menu__link">Event Planning</a>
+            <a href="getting-setup-meeting.html" class="main-menu__link">Getting Setup</a>
+          </li>
+          <li class="main-menu__item">
+            <a href="event-planning.html" class="main-menu__link">Event Planning</a>
           </li>
           <li class="main-menu__item">
             <a href="" class="main-menu__link">FAQ</a>
@@ -45,30 +45,27 @@
       <h1 class="page-title  page-title--divider">Meeting Journey</h1>
 
       <div class="tabs">
-        <ul class="tabs__list" data-tabs id="tabs">
-          <li class="tabs__title  tabs__title--active" data-panel="meeting">
+        <div class="tabs__list">
+           <a class="tabs__title" href="getting-setup-meeting.html">
             <div class="tabs__icon  tabs__icon--meeting"></div>
             <p class="tabs__text">GoTo Meeting</p>
-          </li>
-          <li class="tabs__title" data-panel="webinar">
+          </a>
+          <a class="tabs__title  tabs__title--active" href="getting-setup-webinar.html">
             <div class="tabs__icon  tabs__icon--webinar"></div>
             <p class="tabs__text">GoTo Webinar</p>
-          </li>
-          <li class="tabs__title" data-panel="meeting">
+          </a>
+          <a class="tabs__title" href="getting-setup-on24.html">
             <div class="tabs__icon  tabs__icon--on24"></div>
             <p class="tabs__text">On24</p>
-          </li>
-          <li class="tabs__title" data-panel="meeting">
+          </a>
+          <a class="tabs__title" href="getting-setup-other.html">
             <div class="tabs__icon  tabs__icon--other"></div>
             <p class="tabs__text">Other</p>
-          </li>
-        </ul>        
+          </a>
+        </div>        
 
-        <div class="tabs__content" data-tabs-content="tabs">
-          <div class="tabs__panel  tabs__panel--open" id="meeting">
-            <p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.</p>
-          </div>
-          <div class="tabs__panel" id="webinar">
+        <div class="tabs__content" data-tabs-content="tabs">         
+          <div class="tabs__panel  tabs__panel--open" id="webinar">
             <h2 class="tabs__subtitle">About the GoToWebinar</h2>
             <p class="text  page-main__text">Go to Webinar makes it easy to reach your audience and deliver webinars that drive results. Pick a compelling topic, invite guest speakers and include polls and surveys for truly interactive presentations. With built-in reports, analytics and full-service registration, GoToWebinar software helps you generate a list of your most engaged attendees, so your sales team can turn qualified leads into customers.</p>
             
@@ -101,7 +98,7 @@
               
               <div class="test__item  test__item--hidden" data-test="2"  data-answer="yes">
                 
-                <div class="progress-bar">
+                <div class="progress-bar  progress-bar--start">
                   <span class="progress-bar__icon">2</span>
                 </div>
                 
@@ -124,7 +121,7 @@
               
               <div class="test__item  test__item--hidden" data-test="2" data-answer="no">
                 
-                <div class="progress-bar  progress-bar--last">
+                <div class="progress-bar  progress-bar--start">
                   <span class="progress-bar__icon">2</span>
                 </div>
                 
@@ -145,9 +142,32 @@
                 
               </div>
               
+              <div class="test__item  test__item--hidden" data-test="3" data-answer="yes">
+                
+                <div class="progress-bar  progress-bar--start">
+                  <span class="progress-bar__icon">3</span>
+                </div>
+                
+                <div class="test__btn-large-wrap">
+                  <div class="btn btn--large">Documents</div>
+                </div>
+                
+                <p class="title test__title">Documents</p>
+                
+                <ul class="link-list  test__link-list">
+                   <li class="link-list__item  link-list__item--book">
+                    <a href="" class="link-list__link">Certificate of Completion #1</a>
+                   </li>
+                   <li class="link-list__item  link-list__item--book">
+                      <a href="" class="link-list__link">Certificate of Completion #2</a>
+                   </li>
+                </ul>
+                
+              </div>
+              
               <div class="test__item  test__item--hidden" data-test="3" data-answer="no">
                 
-                <div class="progress-bar  progress-bar--last">
+                <div class="progress-bar  progress-bar--start">
                   <span class="progress-bar__icon">3</span>
                 </div>
                 

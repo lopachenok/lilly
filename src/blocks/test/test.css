@@ -12,6 +12,10 @@
       display: none;
     }
     
+    &--no-padding {
+      padding-top: 0;
+    }
+    
   }
   
   &__notify {
@@ -26,6 +30,10 @@
     margin-top: 25px;
   }
   
+  &__title--no-margin {
+    margin-top: 0;
+  }
+  
   &__btn-wrap {
     margin-top: 15px;
     display: flex;
@@ -38,6 +46,10 @@
   
   &__link-list {
     margin-top: 20px;
+  }
+  
+  &__text {
+    margin-top: 15px;
   }
   
 }

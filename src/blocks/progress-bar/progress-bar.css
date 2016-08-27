@@ -96,3 +96,8 @@
   }
   
 }
+
+.progress-bar--top {
+  top: -57px;
+  height: calc(100% + 83px);
+}

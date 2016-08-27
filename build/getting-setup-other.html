@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=Cabin|Lato" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <header class="page-header">
+    <div class="page-header__inner">
+
+      <div class="page-header__container">
+        <div class="page-header__content">
+          <h2 class="page-header__title">Virtual Meeting Pathway Tool</h2>
+          <p class="page-header__text">You use Virtual Meetings every day.
+            <br>This site will guide you on how to make the most of the common tools you use.</p>
+        </div>
+        <div class="main-logo">
+          <img src="img/main-logo.png" alt="" class="main-logo__img">
+        </div>
+      </div>
+
+      <nav class="main-menu  page-header__menu">
+        <ul class="main-menu__list">
+          <li class="main-menu__item">
+            <a href="index.html" class="main-menu__link">Why Virtual?</a>
+          </li>
+          <li class="main-menu__item  main-menu__item--active">
+            <a href="getting-setup-meeting.html" class="main-menu__link">Getting Setup</a>
+          </li>
+          <li class="main-menu__item">
+            <a href="event-planning.html" class="main-menu__link">Event Planning</a>
+          </li>
+          <li class="main-menu__item">
+            <a href="" class="main-menu__link">FAQ</a>
+          </li>
+          <li class="main-menu__item">
+            <a href="" class="main-menu__link">Help</a>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="page-main">
+    <div class="page-main__inner">
+      <h1 class="page-title  page-title--divider">Meeting Journey</h1>
+
+      <div class="tabs">
+        <div class="tabs__list">
+          <a class="tabs__title" href="getting-setup-meeting.html">
+            <div class="tabs__icon  tabs__icon--meeting"></div>
+            <p class="tabs__text">GoTo Meeting</p>
+          </a>
+          <a class="tabs__title" href="getting-setup-webinar.html">
+            <div class="tabs__icon  tabs__icon--webinar"></div>
+            <p class="tabs__text">GoTo Webinar</p>
+          </a>
+          <a class="tabs__title" href="getting-setup-on24.html">
+            <div class="tabs__icon  tabs__icon--on24"></div>
+            <p class="tabs__text">On24</p>
+          </a>
+          <a class="tabs__title  tabs__title--active" href="getting-setup-other.html">
+            <div class="tabs__icon  tabs__icon--other"></div>
+            <p class="tabs__text">Other</p>
+          </a>
+        </div>        
+
+        <div class="tabs__content">         
+          <div class="tabs__panel  tabs__panel--open">
+            <h2 class="tabs__subtitle">Other</h2>
+            <p class="text  page-main__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+            
+            <div class="test">
+             
+              <div class="test__item" data-test="1">
+               
+                <div class="progress-bar  progress-bar--start">
+                  <span class="progress-bar__icon">1</span>
+                </div>
+                
+                <div class="test__btn-large-wrap">
+                  <div class="btn--large">Proposal</div>
+                </div>
+                
+                <div class="notify  test__notify">Here we will have some text about this Proposal. In tablet or mobile will go in 2 lines</div>
+                
+                <p class="title  test__title  test__title--margin">Do you have a meeting proposal?</p>
+                
+                <div class="test__btn-wrap">
+                  <button class="btn" data-btn="yes">                
+                    <span class="btn__icon"></span>Yes
+                  </button>
+                  <button class="btn" data-btn="no">                
+                    <span class="btn__icon"></span>No
+                  </button>
+                </div>
+                
+              </div>
+              
+              <div class="test__item  test__item--hidden" data-test="2"  data-answer="yes">
+                
+                <div class="progress-bar  progress-bar--start">
+                  <span class="progress-bar__icon">2</span>
+                </div>
+                
+                <div class="test__btn-large-wrap">
+                  <div class="btn--large">Contact</div>
+                </div>
+                
+                <p class="title  test__title">Contact detains SME</p>
+                
+                <p class="text  test__text">Lilly Corporate Center<br>Indianapolis, Indiana 46285 USA<br>Phone: +1-317-276-2000</p>
+                
+              </div>
+              
+              <div class="test__item  test__item--hidden" data-test="2" data-answer="no">
+                
+                <div class="progress-bar  progress-bar--start">
+                  <span class="progress-bar__icon">2</span>
+                </div>
+                
+                <div class="test__btn-large-wrap">
+                  <div class="btn--large">Checklist</div>
+                </div>
+                
+                <p class="title test__title">Meeting Proposal Checklist</p>
+                
+                <ul class="link-list  test__link-list">
+                   <li class="link-list__item">
+                    <a href="" class="link-list__link">Link #1</a>
+                   </li>
+                   <li class="link-list__item">
+                      <a href="" class="link-list__link">Link #2</a>
+                   </li>
+                </ul>
+                
+              </div>
+              
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <script src="js/vendor.js"></script>  
+  <script src="js/main.js"></script>
+</body>
+
+</html>

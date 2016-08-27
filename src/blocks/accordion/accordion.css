@@ -40,11 +40,6 @@
         left: 20px;
       }
       
-      .accordion__progressbar {
-        opacity: 1;
-      }
-      
-      
     }
     
   }
@@ -63,6 +58,11 @@
     display: none;
     background: #fff;
     padding-left: 40px;
+    
+    &--no-padding {
+      padding-left: 0;
+    }
+    
   }
   
   &__title {    
@@ -93,4 +93,19 @@
     height: 75px !important;
   }
   
+  &__test {
+    padding-top: 0 !important;
+  }
+  
+  &__test {
+    
+    .test__item {
+      padding-left: 40px !important;
+    }
+  
+  }
+  
+  &__progress-bar {
+    top: 16px !important;
+  }
 }
