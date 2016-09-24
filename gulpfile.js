@@ -99,16 +99,16 @@ gulp.task('clean', function () {
 // Копирование и оптимизация изображений из папки img
 gulp.task('img', function () { 
   return gulp.src(dirs.source + '/blocks/**/*.{png,jpg}',  {since: gulp.lastRun('img')}) // только для изменившихся с последнего запуска файлов   
-    .pipe(debug({title: 'img'}))
-    .pipe(newer(dirs.build + '/img'))  
-    .pipe(debug({title: 'cached'}))
-    .pipe(imagemin({
-            progressive: true,
-            optimizationLevel: 5,
-            //use: [pngquant()],
-            interlaced: true
-          }))
-    .pipe(debug({title: 'imgmin'}))
+//    .pipe(debug({title: 'img'}))
+//    .pipe(newer(dirs.build + '/img'))  
+//    .pipe(debug({title: 'cached'}))
+//    .pipe(imagemin({
+//            progressive: true,
+//            optimizationLevel: 5,
+//            //use: [pngquant()],
+//            interlaced: true
+//          }))
+//    .pipe(debug({title: 'imgmin'}))
     .pipe(rename(function(path){  // удаляем текущий dirname
       path.dirname = '';
       return path;
