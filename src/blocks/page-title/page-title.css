@@ -1,9 +1,8 @@
 .page-title {
   color: #464646;
-  font: 400 32px / 68px $cabin;  
-  
+  font: 400 32px / 68px $cabin;
+
   &--divider {
     border-bottom: 1px solid rgba(238, 238, 238, 0.85);
   }
-  
 }

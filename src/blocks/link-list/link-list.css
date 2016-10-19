@@ -1,11 +1,11 @@
 .link-list {
   padding-left: 27px;
-  
+
   &__item {
     padding-bottom: 15px;
     position: relative;
-    
-    &:before {
+
+    &::before {
       position: absolute;
       content: '';
       width: 16px;
@@ -14,27 +14,23 @@
       top: 0;
       left: -27px;
     }
-    
+
     &--book {
-      
-      &:before {
+
+      &::before {
         background: url(link-book.png) no-repeat center;
       }
-      
     }
-    
   }
-  
+
   &__link {
     color: #0099da;
     font: 400 14px / 18px $lato;
     border-bottom: 1px solid rgba(0, 153, 218, .4);
-    
+
     &:hover {
       border-bottom-color: rgba(0, 153, 218, 1);
       text-decoration: none;
     }
-    
   }
-  
 }

@@ -1,80 +1,74 @@
 .tabs {
-  
+
   &__list {
     display: flex;
-     padding-top: 30px;
-     padding-bottom: 30px;
-     border-bottom: 1px solid rgba(238, 238, 238, 0.85);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(238, 238, 238, 0.85);
   }
-  
+
   &__title {
     width: 150px;
     margin-left: 20px;
     cursor: pointer;
-    
+
     &--active {
-     
+
       .tabs__icon--meeting {
         background: url(icon-meeting.png), linear-gradient(to bottom, #e6b91e 20%, #ca5127 100%);
       }
-      
-      
+
       .tabs__icon--webinar {
         background: url(icon-meeting.png), linear-gradient(to bottom, #6ac8da 20%, #335a9c 100%);
       }
-      
+
       .tabs__icon--on24 {
         background: url(icon-on24.png), linear-gradient(to bottom, #017dc3 40%, #017dc3 100%);
       }
-      
+
       .tabs__icon--other {
-         background:  url(icon-other.png), #e1261f;
-      }      
-      
+        background: url(icon-other.png), #e1261f;
+      }
+
       .tabs__text {
         color: #e2231a;
       }
-      
     }
-    
   }
-  
+
   &__icon {
     width: 100%;
     height: 150px;
     background: url(icon-meeting.png), linear-gradient(to bottom, #d0d0d0 40%, #a5a5a5 100%);
     border-radius: 7px;
-    
+
     &--on24 {
       background: url(icon-on24.png), linear-gradient(to bottom, #d0d0d0 40%, #a5a5a5 100%);
     }
-    
+
     &--other {
       background: url(icon-other.png), linear-gradient(to bottom, #d0d0d0 40%, #a5a5a5 100%);
     }
-    
   }
-  
+
   &__text {
     color: #4e4e4e;
     font: 700 16px / 18px $lato;
     margin-top: 20px;
     text-align: center;
   }
-  
+
   &__panel {
     display: none;
     padding-top: 30px;
-    
+
     &--open {
       display: block;
     }
-    
   }
-  
-   &__subtitle {
+
+  &__subtitle {
     color: #464646;
     font: 300 22px / 18px $lato;
   }
-  
 }

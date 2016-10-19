@@ -1,55 +1,52 @@
 .test {
-  padding-top: 20px;  
-  
+  padding-top: 20px;
+
   &__item {
     padding-left: 54px;
     padding-top: 20px;
     padding-bottom: 20px;
     border-bottom: 1px solid rgba(238, 238, 238, 0.85);
     position: relative;
-    
+
     &--hidden {
       display: none;
     }
-    
+
     &--no-padding {
       padding-top: 0;
     }
-    
   }
-  
+
   &__notify {
     margin-top: 10px;
   }
-  
+
   &__title {
     margin-top: 20px;
   }
-  
+
   &__title--margin {
     margin-top: 25px;
   }
-  
+
   &__title--no-margin {
     margin-top: 0;
   }
-  
+
   &__btn-wrap {
     margin-top: 15px;
     display: flex;
-    
+
     .btn:first-of-type {
       margin-right: 15px;
     }
-    
   }
-  
+
   &__link-list {
     margin-top: 20px;
   }
-  
+
   &__text {
     margin-top: 15px;
   }
-  
 }

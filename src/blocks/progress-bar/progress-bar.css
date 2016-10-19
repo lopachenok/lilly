@@ -4,8 +4,8 @@
   left: 0;
   height: 100%;
   width: 26px;
-  
-  &:after {
+
+  &::after {
     content: '';
     position: absolute;
     top: 0;
@@ -14,87 +14,81 @@
     background-color: #e7e7e7;
     left: 11px;
   }
-  
+
   &__icon {
     width: 26px;
     height: 26px;
     display: block;
     background-color: #e7e7e7;
     border-radius: 50%;
-    color: #666666;
+    color: #666;
     font: 700 14px / 26px $lato;
     text-align: center;
     z-index: 1;
     position: relative;
   }
-  
 }
 
 .progress-bar--yes {
-  
+
   .progress-bar__icon {
     background: #61ba0e url(ok.png) no-repeat center;
     font-size: 0;
-  }    
-  
-  &:after {
+  }
+
+  &::after {
     background-color: #61ba0e;
   }
-} 
+}
 
 .progress-bar--half-yes {
-  
+
   .progress-bar__icon {
     background: #61ba0e url(ok.png) no-repeat center;
     font-size: 0;
-  }    
-  
-  &:after {
+  }
+
+  &::after {
     background: linear-gradient(to top, #e7e7e7 50%, #61ba0e 50%);
   }
-  
 }
 
 .progress-bar--no {
-  
+
   .progress-bar__icon {
     background: #e2231a url(cansel.png) no-repeat 48%;
     font-size: 0;
   }
-  
-  &:after {
+
+  &::after {
     background: #e2231a;
   }
-  
 }
 
 .progress-bar--half-no {
-  
+
   .progress-bar__icon {
     background: #e2231a url(cansel.png) no-repeat 48%;
     font-size: 0;
   }
-  
-  &:after {
+
+  &::after {
     background: linear-gradient(to top, #e7e7e7 50%, #e2231a 50%);
   }
-  
 }
 
 .progress-bar--last {
-  
-  &:after {
+
+  &::after {
     display: none;
   }
-  
 }
 
 .progress-bar--start {
-  
-  &:after {
+
+  &::after {
     display: none;
   }
-  
 }
 
 .progress-bar--top {

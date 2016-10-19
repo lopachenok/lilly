@@ -1,5 +1,4 @@
 .btn {
-  display: block;
   height: 24px;
   width: 55px;
   border-radius: 6px;
@@ -12,7 +11,7 @@
   cursor: pointer;
   padding: 0;
   outline: none;
-  
+
   &__icon {
     display: block;
     width: 14px;
@@ -21,8 +20,8 @@
     border: 1px solid #e7e7e7;
     margin: 0 6px;
     position: relative;
-    
-    &:before {
+
+    &::before {
       position: absolute;
       content: '';
       height: 8px;
@@ -32,37 +31,31 @@
       top: 50%;
       transform: translate(-50%, -50%);
     }
-    
-  }  
-  
+  }
 }
 
 .btn--yes {
   border-color: #61ba0e;
-  
+
   .btn__icon {
     border-color: #61ba0e;
-    
-    &:before {
+
+    &::before {
       background-color: #61ba0e;
     }
-    
   }
-  
 }
 
 .btn--no {
   border-color: #e2231a;
-  
+
   .btn__icon {
     border-color: #e2231a;
-    
-    &:before {
+
+    &::before {
       background-color: #e2231a;
     }
-    
   }
-  
 }
 
 .btn--large {
@@ -71,7 +64,7 @@
   height: 40px;
   padding-left: 15px;
   padding-right: 15px;
-  color: #ffffff;
+  color: #fff;
   font: 700 16px / 40px $lato;
   width: auto;
   display: inline-block;

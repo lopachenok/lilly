@@ -9,8 +9,8 @@
   padding-left: 33px;
   padding-right: 10px;
   position: relative;
-  
-  &:after {
+
+  &::after {
     position: absolute;
     content: '';
     height: 16px;
@@ -20,5 +20,4 @@
     top: 50%;
     transform: translateY(-50%);
   }
-  
 }
