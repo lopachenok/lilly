@@ -29,7 +29,7 @@
             <a href="event-planning.html" class="main-menu__link">Event Planning</a>
           </li>
           <li class="main-menu__item">
-            <a href="" class="main-menu__link">FAQ</a>
+            <a href="faq.html" class="main-menu__link">FAQ</a>
           </li>
           <li class="main-menu__item  main-menu__item--active">
             <a href="" class="main-menu__link">Help</a>
@@ -42,45 +42,138 @@
 
   <main class="page-main">
     <div class="page-main__inner">
-      <h1 class="page-title">Help</h1>
 
-      <ul class="accordion" data-accordion data-allow-all-closed="true">
+      <div class="simple-tabs">
+        <ul class="simple-tabs__list">
+          <li class="simple-tabs__item  simple-tabs__item--active">
+            <a href="#ci" class="simple-tabs__link">Contact Info</a>
+          </li>
+          <li class="simple-tabs__item">
+            <a href="#es" class="simple-tabs__link">External Support</a>
+          </li>
+          <li class="simple-tabs__item">
+            <a href="#tr" class="simple-tabs__link">Troubleshooting</a>
+          </li>
+        </ul>
+      </div>
 
-        <li class="accordion__item" data-accordion-item="true">
-          <a href="#" class="accordion__link">
-          Contact info</a>
-          <div class="accordion__content" data-tab-content="true">
-           <div class="progress-bar  progress-bar--start  accordion__progress-bar">
-              <span class="progress-bar__icon">1</span>
-            </div>
-            <p class="text  accordion__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id</p>
-          </div>
-        </li>
-
-        <li class="accordion__item" data-accordion-item="true">
-          <a href="#" class="accordion__link">
-          External support</a>
-          <div class="accordion__content" data-tab-content="true">
-           <div class="progress-bar  progress-bar--start  accordion__progress-bar">
-              <span class="progress-bar__icon">1</span>
-            </div>
-            <p class="text  accordion__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id</p>
-          </div>
-        </li>
-
-        <li class="accordion__item" data-accordion-item="true">
-          <a href="#" class="accordion__link">
-          Troubleshooting</a>
-          <div class="accordion__content" data-tab-content="true">
-           <div class="progress-bar  progress-bar--start  accordion__progress-bar">
-              <span class="progress-bar__icon">1</span>
-            </div>
-            <p class="text  accordion__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id</p>
-
-          </div>
-        </li>
-
-      </ul>
+      <div class="simple-tabs__container">
+        <div class="simple-tabs__content  simple-tabs__content--active" id="ci">
+          <ul class="lined-list">
+            <li class="lined-list__item">
+              Contact person Name
+              <p class="text">email: username@mail.com</p>
+              <p class="text">Ph: 0000 0000 0000</p>
+            </li>
+          </ul>
+        </div>
+        <div class="simple-tabs__content" id="es">
+          <ul class="lined-list">
+            <li class="lined-list__item">
+              1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt ratione facere dolores sed nemo animi perferendis aliquam et, numquam earum!
+              <ul class="mark-list">
+                <li class="mark-list__item">Fusce dignissim tortor non quam malesuada</li>
+                <li class="mark-list__item">Fusce dignissim tortor non quam malesuada</li>
+              </ul>
+            </li>
+            <li class="lined-list__item">
+              2. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt ratione facere dolores sed nemo animi perferendis aliquam et, numquam earum!
+              <ul class="mark-list">
+                <li class="mark-list__item">Fusce dignissim tortor non quam malesuada</li>
+                <li class="mark-list__item">Fusce dignissim tortor non quam malesuada</li>
+              </ul>
+            </li>
+            <li class="lined-list__item">
+              3. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt ratione facere dolores sed nemo animi perferendis aliquam et, numquam earum!
+              <ul class="mark-list">
+                <li class="mark-list__item">Fusce dignissim tortor non quam malesuada</li>
+                <li class="mark-list__item">Fusce dignissim tortor non quam malesuada</li>
+              </ul>
+            </li>
+            <li class="lined-list__item">
+              4. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt ratione facere dolores sed nemo animi perferendis aliquam et, numquam earum!
+              <ul class="mark-list">
+                <li class="mark-list__item">Fusce dignissim tortor non quam malesuada</li>
+                <li class="mark-list__item">Fusce dignissim tortor non quam malesuada</li>
+              </ul>
+            </li>
+            <li class="lined-list__item">
+              5. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt ratione facere dolores sed nemo animi perferendis aliquam et, numquam earum!
+              <ul class="mark-list">
+                <li class="mark-list__item">Fusce dignissim tortor non quam malesuada</li>
+                <li class="mark-list__item">Fusce dignissim tortor non quam malesuada</li>
+              </ul>
+            </li>
+            <li class="lined-list__item">
+              6. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt ratione facere dolores sed nemo animi perferendis aliquam et, numquam earum!
+              <ul class="mark-list">
+                <li class="mark-list__item">Fusce dignissim tortor non quam malesuada</li>
+                <li class="mark-list__item">Fusce dignissim tortor non quam malesuada</li>
+              </ul>
+            </li>
+            <li class="lined-list__item">
+              7. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt ratione facere dolores sed nemo animi perferendis aliquam et, numquam earum!
+              <ul class="mark-list">
+                <li class="mark-list__item">Fusce dignissim tortor non quam malesuada</li>
+                <li class="mark-list__item">Fusce dignissim tortor non quam malesuada</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="simple-tabs__content" id="tr">
+          <ul class="lined-list">
+            <li class="lined-list__item">
+              1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt ratione facere dolores sed nemo animi perferendis aliquam et, numquam earum!
+              <ul class="mark-list">
+                <li class="mark-list__item">Fusce dignissim tortor non quam malesuada</li>
+                <li class="mark-list__item">Fusce dignissim tortor non quam malesuada</li>
+              </ul>
+            </li>
+            <li class="lined-list__item">
+              2. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt ratione facere dolores sed nemo animi perferendis aliquam et, numquam earum!
+              <ul class="mark-list">
+                <li class="mark-list__item">Fusce dignissim tortor non quam malesuada</li>
+                <li class="mark-list__item">Fusce dignissim tortor non quam malesuada</li>
+              </ul>
+            </li>
+            <li class="lined-list__item">
+              3. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt ratione facere dolores sed nemo animi perferendis aliquam et, numquam earum!
+              <ul class="mark-list">
+                <li class="mark-list__item">Fusce dignissim tortor non quam malesuada</li>
+                <li class="mark-list__item">Fusce dignissim tortor non quam malesuada</li>
+              </ul>
+            </li>
+            <li class="lined-list__item">
+              4. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt ratione facere dolores sed nemo animi perferendis aliquam et, numquam earum!
+              <ul class="mark-list">
+                <li class="mark-list__item">Fusce dignissim tortor non quam malesuada</li>
+                <li class="mark-list__item">Fusce dignissim tortor non quam malesuada</li>
+              </ul>
+            </li>
+            <li class="lined-list__item">
+              5. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt ratione facere dolores sed nemo animi perferendis aliquam et, numquam earum!
+              <ul class="mark-list">
+                <li class="mark-list__item">Fusce dignissim tortor non quam malesuada</li>
+                <li class="mark-list__item">Fusce dignissim tortor non quam malesuada</li>
+              </ul>
+            </li>
+            <li class="lined-list__item">
+              6. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt ratione facere dolores sed nemo animi perferendis aliquam et, numquam earum!
+              <ul class="mark-list">
+                <li class="mark-list__item">Fusce dignissim tortor non quam malesuada</li>
+                <li class="mark-list__item">Fusce dignissim tortor non quam malesuada</li>
+              </ul>
+            </li>
+            <li class="lined-list__item">
+              7. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt ratione facere dolores sed nemo animi perferendis aliquam et, numquam earum!
+              <ul class="mark-list">
+                <li class="mark-list__item">Fusce dignissim tortor non quam malesuada</li>
+                <li class="mark-list__item">Fusce dignissim tortor non quam malesuada</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
 
     </div>
 

@@ -1,0 +1,35 @@
+.simple-tabs {
+  padding-top: 40px;
+
+  &__list {
+    display: flex;
+    border-bottom: 2px solid #e7e7e7;
+  }
+
+  &__item {
+    padding: 10px 20px;
+
+    &--active {
+      background: #fbfbfb;
+
+      .simple-tabs__link {
+        color: #e2231a;
+      }
+    }
+  }
+
+  &__link {
+    font-size: 24px;
+    font-family: $cabin;
+    color: rgb(70, 70, 70);
+    line-height: 1.262;
+  }
+
+  &__content {
+    display: none;
+
+    &--active {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.lined-list {
+
+  &__item {
+    padding: 20px 0;
+    font-size: 20px;
+    font-family: $cabin;
+    color: rgb(78, 78, 78);
+    line-height: 1.2;
+    border-bottom: 1px solid #e7e7e7;
+  }
+}

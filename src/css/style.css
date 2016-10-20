@@ -16,3 +16,6 @@
 @import '../.././src/blocks/test/test.css';
 @import '../.././src/blocks/notify/notify.css';
 @import '../.././src/blocks/progress-bar/progress-bar.css';
+@import '../.././src/blocks/simple-tabs/simple-tabs.css';
+@import '../.././src/blocks/lined-list/lined-list.css';
+@import '../.././src/blocks/mark-list/mark-list.css';
