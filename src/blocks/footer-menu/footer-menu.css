@@ -1,0 +1,32 @@
+.footer-menu {
+  height: 100%;
+
+  &__list {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    display: inline-block;
+    margin-right: 30px;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      height: 15px;
+      border-right: 1px solid rgba(255, 255, 255, .8);
+      top: 2px;
+      right: -15px;
+    }
+  }
+
+  &__link {
+    font-size: 13px;
+    font-family: $lato;
+    color: rgb(255, 255, 255);
+    opacity: 0.8;
+    line-height: 1.385;
+  }
+}

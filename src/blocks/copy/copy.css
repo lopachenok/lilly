@@ -1,0 +1,10 @@
+.copy {
+  font-size: 13px;
+  font-family: $lato;
+  color: rgb(255, 255, 255);
+  opacity: 0.8;
+  line-height: 1.385;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}

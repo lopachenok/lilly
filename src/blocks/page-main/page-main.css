@@ -1,6 +1,6 @@
 .page-main {
   background-color: rgba(238, 238, 238, 0.85);
-  min-height: calc(100vh - 167px);
+  min-height: calc(100vh - 167px - 45px);
 
   &__inner {
     @mixin container;
