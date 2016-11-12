@@ -1,6 +1,6 @@
 .btn {
   height: 24px;
-  width: 55px;
+  min-width: 55px;
   border-radius: 6px;
   border: 1px solid #e7e7e7;
   color: #464646;
@@ -11,6 +11,7 @@
   cursor: pointer;
   padding: 0;
   outline: none;
+  padding-right: 5px;
 
   &__icon {
     display: block;
@@ -54,6 +55,18 @@
 
     &::before {
       background-color: #e2231a;
+    }
+  }
+}
+
+.btn--notsure {
+  border-color: #666;
+
+  .btn__icon {
+    border-color: #666;
+
+    &::before {
+      background-color: #666;
     }
   }
 }

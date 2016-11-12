@@ -4,13 +4,13 @@ $(document).ready(function() {
 });
 document.addEventListener("DOMContentLoaded", function() {
   var buttons = document.querySelectorAll(".btn");
-  
+
   if(buttons) {
     Array.prototype.forEach.call(buttons, function(button) {
       button.addEventListener("click", clickButton.bind(null, button));
     });
   }
-  
+
 });
 
 function clickButton(button, e) {
@@ -19,13 +19,31 @@ function clickButton(button, e) {
    if(btnNo) {
      btnNo.classList.remove("btn--no");
    }
+   var btnNotsure = button.parentElement.querySelector(".btn--notsure");
+   if(btnNotsure) {
+     btnNotsure.classList.remove("btn--notsure");
+   }
    button.classList.add("btn--yes");
- } else {
+ } else if(button.getAttribute("data-btn") == "no"){
    var btnYes = button.parentElement.querySelector(".btn--yes");
    if(btnYes) {
      btnYes.classList.remove("btn--yes");
    }
+   var btnNotsure = button.parentElement.querySelector(".btn--notsure");
+   if(btnNotsure) {
+     btnNotsure.classList.remove("btn--notsure");
+   }
    button.classList.add("btn--no");
+ } else {
+   var btnNo = button.parentElement.querySelector(".btn--no");
+   if(btnNo) {
+     btnNo.classList.remove("btn--no");
+   }
+   var btnYes = button.parentElement.querySelector(".btn--yes");
+   if(btnYes) {
+     btnYes.classList.remove("btn--yes");
+   }
+   button.classList.add("btn--notsure");
  }
 }
 document.addEventListener("DOMContentLoaded", function() {
@@ -46,35 +64,47 @@ function chooseTest(button, event) {
   var nextAnswer = button.getAttribute("data-btn");
   var nextVariant = document.querySelector("*[data-test='"+nextCount+"'][data-answer='"+nextAnswer+"']");
   var label = testItem.querySelector(".btn--large");
-  if(nextAnswer == 'yes') {    
+  if(nextAnswer == 'yes') {
     testItem.children[0].classList.remove("progress-bar--start");
     testItem.children[0].classList.remove("progress-bar--half-no");
     testItem.children[0].classList.add("progress-bar--half-yes");
-    
+
     if(label) {
       label.classList.remove("btn--large-no");
       label.classList.add("btn--large-yes");
-    }   
-    
-  } else {
+    }
+
+  } else if(nextAnswer == 'no'){
     testItem.children[0].classList.remove("progress-bar--start");
     testItem.children[0].classList.remove("progress-bar--half-yes");
     testItem.children[0].classList.add("progress-bar--half-no");
-    
+
     if(label) {
       label.classList.remove("btn--large-yes");
-      label.classList.add("btn--large-no");      
-    }    
-    
+      label.classList.add("btn--large-no");
+    }
+
+  } else {
+    testItem.children[0].classList.remove("progress-bar--start");
+    testItem.children[0].classList.remove("progress-bar--half-yes");
+    testItem.children[0].classList.remove("progress-bar--half-no");
+    testItem.children[0].classList.remove("progress-bar--no");
+    testItem.children[0].classList.remove("progress-bar--yes");
+
+    if(label) {
+      label.classList.remove("btn--large-yes");
+      label.classList.remove("btn--large-no");
+    }
+
   }
-  
+
   if(testItem.previousElementSibling) {
     testItem.previousElementSibling.children[0].classList.remove("progress-bar--half-no");
     testItem.previousElementSibling.children[0].classList.remove("progress-bar--half-yes");
     testItem.previousElementSibling.children[0].classList.remove("progress-bar--no");
     testItem.previousElementSibling.children[0].classList.add("progress-bar--yes");
   }
-  
+
   for(var i = nextCount; i <= testItemCount; i++) {
     Array.prototype.forEach.call(document.querySelectorAll("*[data-test='"+i+"']"), function(next) {
     if(next) {
@@ -93,16 +123,16 @@ function chooseTest(button, event) {
           btn.classList.remove("btn--yes");
           btn.classList.remove("btn--no");
         }
-      });      
+      });
     }
   });
-  
+
   }
-  
+
   if(nextVariant) {
     nextVariant.classList.remove("test__item--hidden");
   } else {
-   
+
     testItem.children[0].classList.add("progress-bar--start");
   }
 }

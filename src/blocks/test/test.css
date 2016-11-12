@@ -37,7 +37,7 @@
     margin-top: 15px;
     display: flex;
 
-    .btn:first-of-type {
+    .btn {
       margin-right: 15px;
     }
   }
